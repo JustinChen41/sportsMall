@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta charset="${_response_encoding}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Basic Styles -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/font-awesome.min.css">
+
+        <!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/smartadmin-production.css">
+		<script src="../public/js/libs/jquery-2.0.2.min.js"></script>
+		<script src="../public/js/libs/jquery-ui-1.10.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="../public/css/custom-style.css">
+    </head>
+    <body class="">
+        <!-- possible classes: minified, fixed-ribbon, fixed-header, fixed-width-->
+
+        <!-- HEADER -->
+        <header id="header">
+            <div id="logo-group">
+                <!-- PLACE YOUR LOGO HERE -->
+                <span> <img src="../public/images/logo.png"> <h4><a href="@{Application.index}">煤炭江湖管理平台</a></h4></span>
+            </div>
+            <!-- end projects dropdown -->
+
+            <!-- pulled right: nav area -->
+            <div class="pull-right">
+
+                <!-- collapse menu button -->
+                <div id="hide-menu" class="btn-header pull-right">
+                    <span> 
+                        <a href="javascript:void(0);" title="Collapse Menu">
+                            <i class="fa fa-reorder"></i>
+                        </a> 
+                    </span>
+                </div>
+                <!-- end collapse menu -->
+				<!-- logout button -->
+                <div id="logout" class="btn-header transparent pull-right">
+                    <span>
+						<p style="font-size:16px;float:right;padding-top:13px;margin-right: -10px;color: #fff;">菜单-></p>
+                    </span>
+                </div>
+                <!-- end logout button -->
+            </div>
+            <!-- end pulled right: nav area -->
+
+        </header>
+        <!-- END HEADER -->
+
+        <!-- Left panel : Navigation area -->
+        <!-- Note: This width of the aside area can be adjusted through LESS variables -->
+        <aside id="left-panel">
+			<!-- User info -->
+            <div class="login-info">
+                <span> <!-- User image size is adjusted inside CSS, it should stay as it --> 
+
+                    <a href="javascript:void(0);" id="show-shortcut">
+                        <img src="${session?.get('adminPortrait')}" alt="me" class="online" /> 
+                        <span>
+							${session?.get("adminUserName")}
+                        </span>
+                        <i class="fa fa-angle-down"></i>
+                    </a> 
+
+                </span>
+            </div>
+            <!-- end user info -->
+            <nav>
+                <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+				Please note that these links work a bit different than
+				traditional hre="" links. See documentation for details.
+				-->
+
+                <ul id="PagemenuClass">
+                	<li>
+                        <a href="@{Application.index}" title="首页">
+                            <i class="fa fa-lg fa-fw fa-home"></i> 
+                            <span class="menu-item-parent">首页</span>
+                        </a>
+                    </li>
+                </ul>
+
+				<ul id="PagemenuClass">
+                	<li>
+                        <a href="javascript:void(0);" title="新闻速递">
+                            <i class="fa fa-lg fa-fw fa-list-ul"></i> 
+                            <span class="menu-item-parent">新闻速递</span>
+                        </a>
+						<ul>
+							<li><a href="areaadmin/">区域板块管理</a></li>
+						</ul>
+                    </li>
+                </ul>
+            </nav>
+            <span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+        </aside>
+
+        <!-- MAIN PANEL -->
+        <div id="main" role="main">
+            #{doLayout /}
+        </div>
+        <!-- END MAIN PANEL -->
+
+        <!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+		Note: These tiles are completely responsive,
+		you can add as many as you like
+		-->
+    </body>
+    <!--================================================== -->
+    <!-- BOOTSTRAP JS -->
+    <script src="../public/js/bootstrap/bootstrap.min.js"></script>
+    <!-- MAIN APP JS FILE -->
+    <script src="../public/js/app.js"></script>
+    <!-- PAGE RELATED PLUGIN(S) -->
+</html>

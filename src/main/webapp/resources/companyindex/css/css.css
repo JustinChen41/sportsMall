@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+*     {margin:0px;padding:0px;font-family:"微软雅黑";color:#333;}
+a{text-decoration: none; color:#454545;}
+body {
+	background:#f3f3f3;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.header.jhh_header {
+	height:113px;
+	padding-top:45px;
+	background:url(../images/bg_jianghuhao_index.png) no-repeat;
+	background-size:100% 158px;
+}
+.header.sp_header {
+	height:113px;
+	padding-top:45px;
+	background:url(../images/bg_shop_index.png) no-repeat;
+	background-size:100% 158px;
+}
+.header .avatar {
+	position:relative;
+	width:57px;
+	height:57px;
+	margin:28px 10px 0 15px;
+	float:left;
+}
+.header .avatar img {
+	width:55px;
+	height:55px;
+	border:1px solid rgba(255,255,255,.5);
+	border-radius:56px;
+}
+.header .info {
+	margin:28px 15px 0 82px;
+}
+.header h4 {
+	margin-bottom:8px;
+	line-height:16px;
+	font-size:16px;
+	font-weight:normal;
+	color:#fff;
+}
+.header p {
+	line-height:18px;
+	font-size:12px;
+	color:#fff;
+}
+.portlet {
+	margin-bottom:10px;
+	background:#fff;
+}
+.forum_content {
+    padding: 15px 15px 15px 0;
+	margin-left:15px;
+    border-top: 1px solid #cfcfcf;
+	overflow:hidden;
+}
+.forum_content:first-child {
+	border:none;
+}
+.forum_content h4 {
+	line-height:24px;
+	font-size:16px;
+	font-weight:normal;
+}
+.forum_content p {
+    color: #999;
+    margin-top: 5px;
+	line-height:18px;
+    font-size: 12px;
+}
+.forum-user {
+    position: relative;
+    margin-top: 8px;
+    line-height: 12px;
+    font-size: 12px;
+}
+.box-right {
+    position: relative;
+	float: right;
+    margin: 0 0 0 10px;
+	width: 90px;
+    height: 70px;
+    overflow: hidden;
+}
+.box-right img {
+    position: absolute;
+    margin: auto;
+    top: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+}
+.label-orange, .label-green{
+    margin-right: 2px;
+    padding: 2px 4px;
+    font-size: 12px;
+    color: #fff;
+}
+.label-orange {
+	background:#f77b51;
+}
+.label-green {
+	background:#00c65f;
+}
+.font_color_999, .font_color_a9 {
+    color: #999;
+}
+.portlet-more {
+	height:46px;
+	line-height:46px;
+	border-top:1px solid #cfcfcf;
+	border-bottom:1px solid #cfcfcf;
+}
+.portlet-more a {
+	display:block;
+	color:#0074c1;
+	text-align:center;
+}

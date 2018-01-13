@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.block2a{ width:1000px; margin:20px auto 10px;}
+.block2al{ float:left;}
+.block2ar{ float:right; margin-top:18px;}
+.box1,.box2,.box3,.box4,.box5{ text-align:center;}
+.block2b{ background:#f5f5f5; padding:30px 0; text-align:center;}
+.block2bbox{ width:1000px; margin:0 auto;  padding:21px 0; background:url(../images/web_17.jpg) no-repeat; color:#888888;}
+.box1{ background-color:#0074c2;}
+.box2,.box4{background-color:#f4f9fc;}
+.box3,.box5{background-color:#d7e9ff;}
+.logo{ margin:5% 10%; text-align:center}
+

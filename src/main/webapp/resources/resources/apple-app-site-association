@@ -1,0 +1,11 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+          {
+              "appID": "SD6DV5TS78.MeiTanJiangHu",
+              "paths": [ "/application/share*"]
+          }
+      ]
+  }
+}

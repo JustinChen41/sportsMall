@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+*     {margin:0px;padding:0px;font-family:"微软雅黑";color:#333;}
+a{text-decoration: none; color:#454545;}
+body {
+	background:#f5f5f5;
+}
+.top {
+	padding-bottom:25px;
+	background:#fff;
+	text-align:center;
+}
+.top img {
+	width:100%;
+}
+.top img.title {
+	width:325px;
+	height:26px;
+	margin-top:25px;
+}
+.top p {
+	margin:15px 25px 0;
+	line-height:24px;
+	font-size:16px;
+	text-indent:2em;
+	text-align:justify;
+}
+.top p.font_color_666 {
+	color:#666;
+}
+.p_list {
+	margin-top:10px;
+	padding:0 25px 100px;
+	background:#fff;
+	border-bottom:1px solid #e8e8e8;
+	text-align:center;
+}
+.p_list h3 {
+	padding:20px 0;
+	margin-bottom:20px;
+	border-bottom:1px dashed #7ec9fa;
+	line-height:24px;
+	font-size:24px;
+	font-weight:normal;
+	color:#0093f4;
+}
+.p_list p {
+	margin-bottom:15px;
+	line-height:16px;
+	font-size:16px;
+}
+.p_list p a {
+	color:#0093f4;
+	text-decoration:underline;
+}
+.p_list p.font_color_999 {
+	color:#999;
+}
+.p_list img {
+	margin-top:40px;
+}

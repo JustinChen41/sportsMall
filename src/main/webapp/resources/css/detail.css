@@ -1,0 +1,18 @@
+.news_content img {		  
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+table {
+	border: 1px solid #cfcfcf;
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td {
+	border: 1px solid #cfcfcf;
+	padding: 10px;
+}
+#ds-thread #ds-reset .ds-icon {height:16px;width:16px;}
+#ds-thread #ds-reset .ds-icon-reply {background:url(../public/images/icon_comment.png) no-repeat;}
+#ds-thread #ds-reset .ds-icon-like {background:url(../public/images/icon_like.png) no-repeat;}
+#ds-thread #ds-reset .ds-icon-report {background:url(../public/images/icon_report.png) no-repeat;}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jtchen.dao.AreaDao">
+    <select id="queryArea" resultType="com.jtchen.entity.Area">
+        SELECT areaId, areaLogo,areaName, areaNo, areaOutline,
+        areaTip, dateTimestamp, isDelete, isHaveLabel, isSupply
+        FROM area
+        ORDER BY areaNo ASC
+    </select>
+    <!--表的主键为自动生成策略时，填写属性及对应的自增主键列和实体类变量名useGeneratedKeys="true" keyColumn="areaId" keyProperty="areaId"-->
+    <insert id="insertArea" useGeneratedKeys="true" keyProperty="areaId" keyColumn="areaId">
+        INSERT INTO
+        area(areaName, areaNo, areaLogo, dateTimestamp, areaOutline, isHaveLabel, isSupply, areaTip, isDelete)
+        VALUES
+        (#{areaName}, #{areaNo}, #{areaLogo}, #{dateTimestamp}, #{areaOutline}, #{isHaveLabel}, #{isSupply}, #{areaTip}, #{isDelete})
+    </insert>
+    <update id="updateArea" parameterType="com.jtchen.entity.Area">
+        UPDATE area
+        <set>
+            <if test="areaName != null">areaName=#{areaName},</if>
+            <if test="areaNo != null">areaNo=#{areaNo},</if>
+            <if test="areaLogo != null">areaLogo=#{areaLogo},</if>
+            <if test="areaOutline != null">areaOutline=#{areaOutline},</if>
+            <if test="isHaveLabel != null">isHaveLabel=#{isHaveLabel},</if>
+            <if test="isSupply != null">isSupply=#{isSupply},</if>
+            <if test="areaTip != null">areaTip=#{areaTip},</if>
+            <if test="isDelete != null">isDelete=#{isDelete},</if>
+            <if test="dateTimestamp != null">dateTimestamp=#{dateTimestamp}</if>
+        </set>
+        WHERE areaId=#{areaId}
+    </update>
+</mapper>

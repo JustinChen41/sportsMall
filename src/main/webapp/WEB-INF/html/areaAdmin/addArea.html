@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/areaadmin/saveareatest" method="post">
+    <input type="text" id="j_captcha" placeholder="验证码" name="verifyCode"/>
+    <img src="../Kaptcha" id="captcha_img" alt="点击更换" title="点击更换" onclick="changeVerifyCode(this);"/>
+    <input type="submit" value="下一步"/>
+</form>
+
+</body>
+<script>
+    function changeVerifyCode(captcha_img) {
+        captcha_img.src = "../Kaptcha?" + Math.floor(Math.random() * 100);
+    }
+</script>
+</html>

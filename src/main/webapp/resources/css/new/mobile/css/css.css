@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+*     {margin:0px;padding:0px;font-family:"微软雅黑";}
+a{text-decoration: none; color:#454545;}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.center_box {
+	width:320px;
+	height:144px;
+	margin:0 auto;
+	background:url(/public/images/new/mobile/images/web_mobile_09.jpg) no-repeat top center;
+	background-size: 320px 144px;
+}
+.footer{
+	height:144px;
+	width:100%;
+}
+.footer .company_info{
+	width:100%;
+	height:144px;
+	background:#666666;
+}
+.footer .copyright{
+	background:#666666;
+	height:40px;
+	width:100%;
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+}
+.footer_logo{
+	position:relative;
+	padding-top:15px;
+	margin:0 auto;
+	width:160px;
+	height:20px;
+}
+.footer_logo img {
+	width:100%;
+}
+.info_detail{
+	width:100%;
+}
+.contact_us,.online{
+	padding:0 30px;
+	margin-top:15px;
+}
+.contact_us {
+	width:120px;
+}
+.online {
+	width:40%;
+	color:#fff;
+}	
+.contact_us h3,.online h3{
+	padding-left:20px;
+	color:#fff;
+	height:12px;
+	padding-bottom:15px;
+	font-size:1em;
+	font-weight:normal;
+	text-indent:-9999px;
+}
+.online h3{
+	background:url(/public/images/new/mobile/images/jh_online_ico.png) left top no-repeat;
+}
+.contact_us a{
+	display:block;
+	height:27px;
+	width:27px;
+	float:left;
+	text-align:center;
+	margin-right:15px;
+	position:relative;
+	text-indent:-999px;
+}
+.contact_us a:last-child {
+	margin:0;
+}
+.contact_us span {
+	color:#fff;
+	font-size:0.6em;
+}
+.contact_us i {
+	display:block;
+	width:22px;
+	height:18px;
+	margin-left:11px;
+}
+.contact_us i.icon_weibo {
+	background:url(/public/images/new/mobile/images/jh_weibo_ico.png) no-repeat;
+	background-size: 22px 18px;
+}
+.contact_us i.icon_weixin {
+	background:url(/public/images/new/mobile/images/jh_weixin_ico.png) no-repeat;
+	background-size: 22px 18px;
+}
+.contact_us i.icon_feedback {
+	background:url(/public/images/new/mobile/images/jh_feedback_ico.png) no-repeat;
+	background-size: 22px 18px;
+}
+.online p{
+	margin-top:10px;
+	font-size:16px;
+}
+.online strong{
+	font-size:36px;
+	font-weight:normal;
+	display:block;		
+}
+
+.popup{
+	display:none;
+    width:173px;
+	height:98px;
+    background:#fff; 
+    padding:4px; 
+    color:#0074c1;  
+    border-radius:6px;
+    position:absolute; 
+    top:-124px; 
+    left:-76px;
+    border:1px solid #0074c1;
+	text-indent:0;
+}
+.popup span{
+    display:block; 
+    width:0; 
+    height:0; 
+    border-width:11px 14px 0; 
+    border-style:solid; 
+    border-color:#0074c1 transparent transparent;/*灰 透明 透明 */
+    position:absolute; 
+    top:107px; 
+    left:50%;/* 三角形居中显示 */
+    margin-left:-14px;/* 三角形居中显示 */
+}
+.popup em{
+    display:block; 
+    width:0; 
+    height:0; 
+    border-width:10px 13px 0; 
+    border-style:solid; 
+    border-color:#fff transparent transparent;/*黄 透明 透明 */
+    position:absolute; 
+    top:-12px;
+    left:-13px;
+}
+.popup img {
+	width:80px;
+	height:80px;
+}
+.border-right {
+	padding-right:4px;
+	margin-right:4px;
+	border-right:1px solid #0074c1;
+}
+.popup p {
+	font-size:12px;
+	margin-bottom:4px;
+}
+.mask {
+	display:none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.opacity {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background: #000;
+}
+.dialogbox {
+	display:none;
+	position:fixed;
+	z-index:101;
+	bottom:50px;
+	left:50%;
+	margin-left:-144px;
+	height:198px;
+	width:286px;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+}
+.dialog_header {
+	height:18px;
+	padding:10px;
+	background:#e4f0f8;
+	border-radius:4px 4px 0 0;
+}
+.dialog_header h4 {
+	font-weight:normal;
+	color:#0074c1;
+	font-size:16px;
+}
+.dialog_header .close {
+	display:block;
+	float:right;
+	height:22px;
+	width:22px;
+	background:url(/public/images/new/mobile/images/ic_close.png) no-repeat;
+}
+.dialog_body {
+	height:140px;
+	padding:10px;
+	background:#fff;
+	border-radius:0 0 4px 4px;
+}
+.dialog_body textarea {
+	height:80px;
+	width:250px;
+	padding:8px;
+	border:1px solid #d4d4d4;
+	font-size:12px;
+}
+.dialog_body .sendbtn {
+	float:right;
+	margin-top:10px;
+	height:30px;
+	width:60px;
+	border-radius:4px;
+	background:#0074c1;
+	color:#fff;
+	font-size:12px;
+}
+.dialog_body .sendbtn:hover {
+	background:#0093f4;
+}

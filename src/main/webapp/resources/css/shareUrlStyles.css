@@ -1,0 +1,354 @@
+﻿table {
+    border: 1px solid #cfcfcf;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #cfcfcf;
+    padding: 10px;
+}
+ol,ul {
+	list-style: none;
+}
+q:before,q:after,
+blockquote:before,blockquote:after {
+	content: "";
+}
+
+body {
+    font-family : Arial, Helvetica, Sans-Serif;
+    font-size:18px;
+    overflow: inherit;
+}
+a {
+  cursor: pointer;
+}
+
+.user-top{
+    width:100%;
+    padding-top:10px;
+    float:left;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#fff;
+    font-size:16px;
+}
+.user-header{
+    margin-left:10px;
+    float:left;
+    display:inline;
+    width:80px;
+    height:80px;
+    overflow:hidden;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+.user-info{
+    float:left;
+    margin-top:0px;
+    margin-left:10px;
+    display:inline;
+}
+
+.truename{font-size:20px;}
+.position{margin-top:3px;}
+.company{margin-top:3px;}
+#progress{margin-top:10px}
+
+.paddingtop10px{padding-top:10px}
+.paddingtop8px{padding-top:8px}
+.paddingleft10px{padding-left:10px}
+.paddingright10px{padding-right:10px}
+.padding0px{padding:0px}
+.num-content{
+    width:30px;
+    float:left;
+    height:100%;
+}
+.num{text-align:center;width:44px;height:30px;padding-top:1px;font-weight:bold;color:#fff;font-size:30px;float:left}
+.num2{text-align:center;width:44px;height:30px;font-weight:bold;color:#0b6db4;font-size:30px;font-style:italic;
+display:table-cell; vertical-align:middle;
+}
+.table-text{height:100%;}
+.num-text table, .num-content table {
+    height:100%;
+}
+.num-text{
+    font-size:18px;
+    width:95%;
+    vertical-align: middle;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+#support{
+    text-align:center;
+    border:1px solid #ccc;
+    height:50px;
+    padding-top:10px;
+    background:#FF9500;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    position: fixed;
+    bottom:0px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#news-open{
+    text-align:center;
+    border:1px solid #ccc;
+    height:60px;
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    position: fixed;
+    top:0px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background:#fff;
+    box-shadow: 0px 3px 7px #999;
+}
+
+.news-left-icon img{
+    float:left;
+    display:inline;
+    margin-left:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+@media screen and (max-width: 2000px) { 
+
+    .news-center-text{
+        float:left;
+        margin-left:10px;
+        display:inline;
+        color:#000;
+    }
+
+    .news-center-text-top{
+        float:left;
+        display:inline;
+        font-size:17px;
+        clear:both;
+    }
+
+    .news-center-text-bottom{
+        float:left;
+        display:inline;
+        font-size:14px;
+        clear:both;
+        color:#aaa;
+    }
+
+    .news-right-link{
+        float:right;
+        display:inline;
+        margin-right:10px;
+    }
+
+    .news-right-link-content{
+        float:left;
+        display:inline;
+        font-size:15px;
+        clear:both;
+        border:1px solid #0074C1;
+        padding:10px 14px 8px 14px;
+        color:#fff;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        background:#0074C1;
+    }
+
+}
+
+@media screen and (max-width: 320px) { 
+
+    .news-center-text-top{
+        font-size:16px;
+    }
+
+    .news-center-text-bottom{
+        font-size:14px;
+    }
+
+    .news-right-link{
+        margin-right:10px;
+    }
+
+    .news-right-link-content{
+        font-size:13px;
+        padding:10px 6px 8px 6px;
+    }
+
+}
+
+
+.bluetext{
+    color:#0074C1;
+}
+
+.news-title{
+    text-align:left;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.news-info{
+    font-size:13px;
+    margin-top:10px;
+    color:#888;
+}
+
+.news-date{
+    margin-left:10px;
+}
+
+.news-reply-count{
+    margin-left:10px;
+    color:#0074C1;
+}
+
+.news-content2{
+    margin-top:10px;
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+.news-content2{
+    margin-top:10px;
+    border:1px solid #ccc;
+    background:#fff;
+    padding:10px;
+}
+
+.news-open-app-main{
+    width:100%;
+    clear:both;
+    height:50px;
+    margin-top:20px;
+}
+
+#news-open-app{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:15px;
+    clear:both;
+    border:1px solid #0074C1;
+    background:#0074C1;
+    padding:10px 0px 10px 0px;
+    color:#fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width:93%;
+    text-align:center;
+}
+
+.news-list-content{
+    float:left;
+    border-bottom:1px solid #ccc;
+    width:100%;
+    margin-bottom:10px;
+    padding: 0px 10px 10px 10px;
+}
+
+.news-hot-title{
+    font-size:18px;
+}
+
+.news-hot-content{
+    font-size:14px;
+    color:#aaa;
+}
+
+#news-more{
+    float:right;
+    padding-bottom:8px;
+    color:#888;
+    font-size:16px;
+}
+
+.news-hot-img{
+    width:80px;
+    float:left;
+}
+
+.news-hot-main{
+    
+}
+
+.supply-demand-p{
+    font-size: 18px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.supply-demand-table{
+    width:100%;font-size:13px;text-align:center;
+}
+.supply-demand-info{
+    border:none !important;
+}
+
+.supply-demand-info td{
+    background:#f5f5f5;
+    border:none !important;
+}
+
+.supply-demand-info td:first-child{padding-left:3px !important;}
+
+.hot-title{
+    margin-top:12px;
+    padding-left:10px;
+    font-size:15px !important;
+}
+
+.supply-demand-table td{padding-left:0px !important;padding-right:0px !important;}
+
+.jarviswidget>header{
+    border:1px solid #ccc;
+}
+
+.jarviswidget>div{
+    border-bottom:1px solid #ccc;
+}
+
+.read-count{color:#000;}
+
+#invite{
+    
+    background:url('/public/images/shareUrl/invite.png') no-repeat center;
+     background-size:100% 100%;  
+    border:none;
+}
+
+#invite h3{margin-top:0px;margin-bottom:0px;}
+
+#border-content{height:2px;width:100%;overflow:hidden;margin-top:10px;margin-bottom:10px;}
+
+hr.simple{width:100%;border:none;border-top:3px dashed #ccc;margin:0px;}
+
+.row-style{border-bottom:1px solid #ccc;}
+
+
+.news-content p{
+	margin:0px;
+	padding:10px 0px 10px 0px;
+}
+
+
+
+pre{
+	border:none;
+	background:none;
+	font-size: 15.9995994567871px;
+	word-wrap: break-word;
+	padding:0px;
+	margin:0px;
+}

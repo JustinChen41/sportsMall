@@ -1,0 +1,172 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+ body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, blockquote, pre { font-family: Tahoma,Helvetica,Arial,\5FAE\8F6F\96C5\9ED1,\5b8b\4f53,sans-serif;}
+a, a:hover {text-decoration:none;}
+.btn-header>:first-child>a, #header a {color: #fff;}
+.bg-color-lightorange {background:#ff8900;}
+
+/* header */
+#header {background: #1A75BC;color:#fff;}
+div#hide-menu a {background: #1A75BC;border: none;}
+div#hide-menu a:hover {box-shadow: none;}
+div#hide-menu a i {color: #fff;}
+#logo-group span {width:190px;height:30px;margin-top:15px;margin-left:5px;}
+#logo-group img {float:left;margin-right:5px;margin-top:-10px;}
+#logo-group h4 {line-height:20px;}
+
+nav ul li a:visited{color:#a8a8a8;}
+/* ribbon */
+#ribbon {background:#fff;border-bottom:1px solid #c2c2c2;}
+.navtab {margin:0;padding:0;height:40px;}
+.navtab li {display:inline-block;height:40px;padding:0;} 
+.navtab li a {display:block;height:40px;line-height:40px;text-align:center;font-size:16px;color:#000;}
+.navtab li.active a {color:#1A75BC;border-bottom:4px solid #1A75BC;}
+
+/* tab-content */
+.tab-content > .tab-panel {display:none;}
+.tab-content > .active {display:block;}
+.carousel-indicators {left:0;bottom:0;margin:0;width:100%;padding:10px 0;background:rgba(0,0,0,0.5)}
+.tips {padding:20px;color:#555;font-size:16px;}
+.control-label, .radio, .checkbox {font-size: 16px;}
+
+/* news-list */
+.page-title {margin-top: 0;margin-bottom:10px;padding-bottom: 10px;border-bottom: 1px solid #ddd;color: #1A75BC;}
+.page-title a {font-size: 14px; color: #1A75BC;margin: 10px 10px 0 0;}
+.page-title span { border-left: 3px solid #0E90D2;}
+.news-list {color: #757575;}
+.news-list h4 {font-size: 16px;}
+.news-list a {color: #1A75BC;}
+.news-list p {font-size: 14px;}
+.media {padding-bottom: 10px;border-bottom: 1px solid #ddd;}
+.media.noborder {border:none;}
+
+/* news content */
+.news_content p { line-height: 24px;}
+.news_content img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* menu */
+.menulist {margin-top:20px;padding:0 10px;overflow:hidden;}
+.menulist.borderb {border-bottom:1px dashed #888;}
+.menulist li {list-style:none;}
+.menulist li a {color:#000;}
+.menulist li img {width:100%;}
+.menulist li span {display:block;width:100%;margin:10px 0 20px;text-align:center;}
+
+/* shopinfo */
+.info-header {
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+/* form */
+.formbg {overflow:hidden;border-bottom:1px solid #ddd;}
+.formbg .clearfix {padding:10px;}
+.formbg .clearfix .textlabel {font-size:16px;padding-top:6px;}
+.formbg .clearfix .textlabel a {color: #666;}
+.formbg .clearfix .input-sm {width:100%;}
+
+.actionbar {
+	height: 30px;
+	margin-top:10px;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	text-align:right;
+}
+.actionbar a {
+	padding: 5px 15px;
+	margin-right: 10px;
+	color: #fff;
+	background: #1A75BC;
+}
+.p-list{overflow:hidden;margin-right:-1px;border:1px solid #DEDEDE;border-collapse:collapse;}
+.p-list th{padding:5px;background:#F0F0F0;border:1px solid #DEDEDE;font-weight:normal;text-align:center;}
+.p-list td{padding:10px;background:#fff;border:1px solid #f0f0f0;text-align:center;}
+.am-form-group {
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.commstar {
+  width: 150px;
+  height: 30px;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom:8px;
+  display: inline-block;
+  overflow: hidden;
+  zoom: 1;
+}
+.commstar a {
+  width: 20%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 20px;
+}
+.commstar .active, .commstar a:hover {
+	background: url(../images/commstar.jpg) left top repeat-x;
+}
+.commstar .star1 {
+  width: 20%;
+  z-index: 9;
+}
+.commstar .star2 {
+  width: 40%;
+  z-index: 8;
+}
+.commstar .star3 {
+  width: 60%;
+  z-index: 7;
+}
+.commstar .star4 {
+  width: 80%;
+  z-index: 6;
+}
+.commstar .star5 {
+  width: 100%;
+  z-index: 5;
+}
+
+/* login */
+#login #main {
+	background: url(../images/loginbg.jpg);
+}
+#login #header {
+	background: #fff;
+	color: #000;
+}
+
+.row-thin .col-xs-4, .row-thin .col-sm-2, .row-thin .col-xs-12, .row-thin .col-sm-3 {padding-left:1px;padding-right:1px;}
+.imgitem {width:100%;height:100px;overflow: hidden;margin-bottom:2px;}
+.imgitem a {color: #fff;}
+.imgitem i {margin:15px 43px;}
+.imgitem p {text-align:center;font-size:16px;}
+.brandimg img, .su-main img {width: 100%;margin-bottom:10px;}
+.panel-heading img {margin: 20px 0;}
+.price-features h4 {text-indent:2em;font-weight:bold;margin-bottom:20px;}
+.bottombar {background:#474544;color:#fff;height:40px;line-height:40px;margin-top:-5px;}
+.bottombar a {color:#fff;margin:0 5px;}
+.align-bottom {position:absolute;bottom:30px;padding: 0 10px;font-weight:bold;}

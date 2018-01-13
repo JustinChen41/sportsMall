@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+*     {margin:0px;padding:0px;font-family:"微软雅黑";}
+a{text-decoration: none; color:#454545;}
+.block2a{ width:1100px; margin:36px auto 28px;}
+.block2ar{ float:right; margin-top:18px;}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7{ height:670px;text-align:center;}
+.block2b{ background:#f5f5f5; padding:30px 0; text-align:center;}
+.block2bbox{ width:1000px; margin:0 auto;  padding:21px 0; background:url(/public/images/new/pc/images/web_17.jpg) no-repeat; color:#888888;}
+.box2,.box4,.box6 {background-color:#fff;}
+.box3,.box5,.box7{background-color:#e5f1f8;}
+.box1 {width:100%;height:670px;margin:0 auto;background: #0070ed url(/public/images/new/pc/images/web_10.jpg) no-repeat center center;}
+.ios-down {display:block;width:220px;height:60px;margin-left:740px;margin-top:380px;position:absolute;}
+.and-down {display:block;width:220px;height:60px;margin-left:740px;margin-top:460px;position:absolute;}
+.box1100 {width:1100px;margin:0 auto;}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.center_box {
+	width:1200px;
+	margin:0 auto;
+}
+.footer{
+	height:240px;
+	width:100%;
+}
+.footer .company_info{
+	width:100%;
+	height:200px;
+	background:#666666;
+}
+.footer .copyright{
+	background:#666666;
+	height:40px;
+	width:100%;
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+}
+.footer_logo{
+	position:relative;
+	margin-top:85px;
+	width:369px;
+	height:46px;
+	background:url(/public/images/new/pc/images/footer_logo.png) no-repeat;
+}
+.info_detail{
+	width:800px;
+}
+.contact_us,.online{
+	border-left:1px solid #fff;
+	padding:0 40px;
+	margin-top:50px;
+}
+.contact_us {
+	width:340px;
+}
+.online {
+	width:298px;
+	color:#fff;
+}	
+.contact_us h3,.online h3{
+	background:url(/public/images/new/pc/images/jh_contact_ico.png) left top no-repeat;
+	padding-left:55px;
+	color:#fff;
+	height:24px;
+	padding-bottom:15px;
+	font-size:18px;
+	font-weight:normal;
+}
+.online h3{
+	background:url(/public/images/new/pc/images/jh_online_ico.png) left top no-repeat;
+}
+.contact_us a{
+	display:block;
+	float:left;
+	text-align:center;
+	margin-right:60px;
+	position:relative;
+}
+.contact_us a:last-child {
+	margin:0;
+}
+.contact_us span {
+	color:#fff;
+	font-size:18px;
+}
+.contact_us i {
+	display:block;
+	width:49px;
+	height:40px;
+	margin-left:11px;
+	margin-bottom:10px;
+}
+.contact_us i.icon_weibo {
+	background:url(/public/images/new/pc/images/jh_weibo_ico.png) no-repeat;
+}
+.contact_us i.icon_weixin {
+	background:url(/public/images/new/pc/images/jh_weixin_ico.png) no-repeat;
+}
+.contact_us i.icon_feedback {
+	background:url(/public/images/new/pc/images/jh_feedback_ico.png) no-repeat;
+}
+.online p{
+	margin-top:10px;
+	font-size:16px;
+}
+.online strong{
+	font-size:36px;
+	font-weight:normal;
+	display:block;		
+}
+
+.popup{
+	display:none;
+    width:255px;
+	height:136px;
+    background:#fff; 
+    padding:10px; 
+    color:#0074c1;  
+    border-radius:6px;
+    position:absolute; 
+    top:-178px; 
+    left:-110px;
+    border:1px solid #0074c1;
+}
+.popup span{
+    display:block; 
+    width:0; 
+    height:0; 
+    border-width:11px 14px 0; 
+    border-style:solid; 
+    border-color:#0074c1 transparent transparent;/*灰 透明 透明 */
+    position:absolute; 
+    top:157px; 
+    left:50%;/* 三角形居中显示 */
+    margin-left:-10px;/* 三角形居中显示 */
+}
+.popup em{
+    display:block; 
+    width:0; 
+    height:0; 
+    border-width:10px 13px 0; 
+    border-style:solid; 
+    border-color:#fff transparent transparent;/*黄 透明 透明 */
+    position:absolute; 
+    top:-12px;
+    left:-13px;
+}
+.border-right {
+	padding-right:12px;
+	margin-right:12px;
+	border-right:1px solid #0074c1;
+}
+.popup p {
+	font-size:12px;
+	margin-bottom:5px;
+}
+.mask {
+	display:none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    z-index: 100;
+}
+.opacity {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background: #000;
+}
+.dialogbox {
+	display:none;
+	position:absolute;
+	z-index:101;
+	bottom:500px;
+	left:50%;
+	margin-left:-335px;
+	height:280px;
+	width:670px;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+}
+.replybox {
+	display:none;
+	position:absolute;
+	z-index:101;
+	bottom:500px;
+	left:50%;
+	margin-left:-335px;
+	height:280px;
+	width:670px;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+}
+.reportbox {
+	display:none;
+	position:fixed;
+	z-index:101;
+	top:50%;
+	left:50%;
+	margin-left:-335px;
+	margin-top:-140px;
+	height:280px;
+	width:670px;
+	border:1px solid #cfcfcf;
+	border-radius:4px;
+}
+.dialog_header {
+	height:20px;
+	padding:20px;
+	background:#e4f0f8;
+	border-radius:4px 4px 0 0;
+}
+.dialog_header h4 {
+	font-weight:normal;
+	color:#0074c1;
+	font-size:18px;
+}
+.dialog_header .close {
+	display:block;
+	float:right;
+	height:22px;
+	width:22px;
+	background:url(/public/images/new/pc/images/ic_close.png) no-repeat;
+}
+.dialog_body {
+	height:180px;
+	padding:20px;
+	background:#fff;
+	border-radius:0 0 4px 4px;
+}
+.dialog_body textarea {
+	height:100px;
+	width:597px;
+	padding:14px;
+	border:1px solid #d4d4d4;
+	font-size:18px;
+}
+.dialog_body .sendbtn {
+	float:right;
+	margin-top:10px;
+	height:40px;
+	width:100px;
+	border-radius:4px;
+	background:#0074c1;
+	color:#fff;
+	font-size:18px;
+}
+.dialog_body .sendbtn:hover {
+	background:#0093f4;
+}
+
+/* retina */
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2){
+	.footer_logo {
+		background:url(/public/images/new/pc/images/footer_logo@2x.png) no-repeat;
+		background-size:369px 46px;
+	}
+	.contact_us h3, .online h3 {
+		background: url(/public/images/new/pc/images/jh_contact_ico@2x.png) left top no-repeat;
+		background-size:31px 25px;
+	}
+	.contact_us i.icon_weibo {
+		background:url(/public/images/new/pc/images/jh_weibo_ico@2x.png) no-repeat;
+		background-size:49px 40px;
+	}
+	.contact_us i.icon_weixin {
+		background:url(/public/images/new/pc/images/jh_weixin_ico@2x.png) no-repeat;
+		background-size:49px 40px;
+	}
+	.contact_us i.icon_feedback {
+		background:url(/public/images/new/pc/images/jh_feedback_ico@2x.png) no-repeat;
+		background-size:49px 40px;
+	}
+	.dialog_header .close {
+		background:url(/public/images/new/pc/images/ic_close@2x.png) no-repeat;
+		background-size:22px 22px;
+	}
+}
