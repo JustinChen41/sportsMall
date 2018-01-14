@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface AreaDao {
     /**
-     * 列出区域列表
+     * 列出板块列表
      * @return areaList
      */
     List<Area> queryArea();
