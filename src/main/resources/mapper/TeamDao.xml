@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jtchen.dao.TeamDao">
+    <select id="queryTeam" resultType="com.jtchen.entity.Team">
+        SELECT team_id, team_chinese_name, team_english_name, team_address, team_boss,
+         team_coach, team_description, team_association, team_home_court, team_found_time,
+         team_honor, team_wiki_url, team_logo,
+         priority, create_time, last_edit_time
+        FROM tb_team
+        ORDER BY priority ASC
+    </select>
+    <!--表的主键为自动生成策略时，填写属性及对应的自增主键列和实体类变量名useGeneratedKeys="true" keyColumn="labelId" keyProperty="labelId"-->
+    <insert id="insertTeam" useGeneratedKeys="true" keyProperty="teamId" keyColumn="teamId">
+        INSERT INTO
+        tb_team(team_chinese_name, team_english_name, team_address, team_boss,
+        team_coach, team_description, team_association, team_home_court, team_found_time,
+        team_honor, team_wiki_url, team_logo,
+         priority, create_time, last_edit_time)
+        VALUES
+        (#{teamChineseName}, #{teamEnglishName}, #{teamAddress}, #{teamBoss},
+        #{teamCoach}, #{teamDescription}, #{teamAssociation}, #{teamHomeCourt}, #{teamFoundTime},
+        #{teamHonor}, #{teamWikiUrl}, #{teamLogo},
+        #{priority}, #{createTime}, #{lastEditTime})
+    </insert>
+    <update id="updateTeam" parameterType="com.jtchen.entity.Label">
+        UPDATE tb_team
+        <set>
+            <if test="teamChineseName != null">team_chinese_name=#{teamChineseName},</if>
+            <if test="teamEnglishName != null">team_english_name=#{teamEnglishName},</if>
+            <if test="teamAddress != null">team_address=#{teamAddress},</if>
+            <if test="teamBoss != null">team_boss=#{teamBoss},</if>
+            <if test="teamCoach != null">team_coach=#{teamCoach},</if>
+            <if test="teamDescription != null">team_description=#{teamDescription},</if>
+            <if test="teamAssociation != null">team_association=#{teamAssociation},</if>
+            <if test="teamHomeCourt != null">team_home_court=#{teamHomeCourt},</if>
+            <if test="teamFoundTime != null">team_found_time=#{teamFoundTime},</if>
+            <if test="teamHonor != null">team_honor=#{teamHonor},</if>
+            <if test="teamWikiUrl != null">team_wiki_url=#{teamWikiUrl},</if>
+            <if test="teamLogo != null">team_logo=#{teamLogo},</if>
+            <if test="priority != null">priority=#{priority},</if>
+            <if test="lastEditTime != null">last_edit_time=#{lastEditTime}</if>
+        </set>
+        WHERE team_id=#{teamId}
+    </update>
+</mapper>

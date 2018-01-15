@@ -32,14 +32,14 @@ public class Team {
     private String teamHonor;
     //球队wiki地址
     private String teamWikiUrl;
+    //球队logo
+    private String teamLogo;
     // 权重，越大越排前显示
     private Integer priority;
     // 创建时间
     private Date createTime;
     // 更新时间
     private Date lastEditTime;
-    //球队logo
-    private String teamLogo;
 
     public Integer getTeamId() {
         return teamId;

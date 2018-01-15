@@ -37,21 +37,6 @@ public class AreaController {
     @Autowired
     private AreaService areaService;
 
-    @RequestMapping(value = "/arealist", method = RequestMethod.GET)
-    private String areaList(Map<String, Object> modelMap) {
-        List<Area> list = new ArrayList<Area>();
-        try {
-            list = areaService.getAreaList();
-            modelMap.put("rows", list);
-            modelMap.put("total", list.size());
-        } catch (Exception e) {
-            e.printStackTrace();
-            modelMap.put("success", false);
-            modelMap.put("errMsg", e.toString());
-        }
-        return "/areaAdmin/areaList";
-    }
-
     @RequestMapping(value = "/addarea")
     private String addArea(){
         return "areaAdmin/addArea";

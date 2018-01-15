@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface AreaService {
     /**
-     * 获取版块儿
+     * 获取版块
      */
     List<Area> getAreaList();
     /**
