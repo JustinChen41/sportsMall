@@ -8,20 +8,5 @@
         FROM tb_news
         ORDER BY priority ASC
     </select>
-    <!--表的主键为自动生成策略时，填写属性及对应的自增主键列和实体类变量名useGeneratedKeys="true" keyColumn="labelId" keyProperty="labelId"-->
-    <insert id="insertLabel" useGeneratedKeys="true" keyProperty="labelId" keyColumn="labelId">
-        INSERT INTO
-        tb_news(label_name, priority, create_time, last_edit_time)
-        VALUES
-        (#{labelName}, #{priority}, #{createTime}, #{lastEditTime})
-    </insert>
-    <update id="updateLabel" parameterType="com.jtchen.entity.News">
-        UPDATE tb_news
-        <set>
-            <if test="labelName != null">label_name=#{labelName},</if>
-            <if test="priority != null">priority=#{priority},</if>
-            <if test="lastEditTime != null">last_edit_time=#{lastEditTime}</if>
-        </set>
-        WHERE label_id=#{labelId}
-    </update>
+
 </mapper>

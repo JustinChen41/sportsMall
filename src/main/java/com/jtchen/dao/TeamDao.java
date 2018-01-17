@@ -29,4 +29,11 @@ public interface TeamDao {
      * @return
      */
     int updateTeam(Team team);
+
+    /**
+     * 根据Id查询球队
+     * @param teamId
+     * @return
+     */
+    Team queryByTeamId(int teamId);
 }

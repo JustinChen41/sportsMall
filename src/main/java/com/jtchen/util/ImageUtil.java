@@ -102,4 +102,23 @@ public class ImageUtil {
         String nowTimeStr = simpleDateFormat.format(new Date());
         return nowTimeStr + rannum;
     }
+
+    /**
+     * 删除图片
+     * @param path
+     * 如果path为文件路径，则删除该文件
+     * 如果path为目录路径，则删除该目录下的所有文件
+     */
+    public static void deleteFileOrPath(String path){
+        File fileOrPath = new File(PathUtil.getImageBasePath() + path);
+        if(fileOrPath.exists()){
+            if(fileOrPath.isDirectory()){
+                File file[] = fileOrPath.listFiles();
+                for (int i = 0; i < file.length; i++){
+                    file[i].delete();
+                }
+            }
+            fileOrPath.delete();
+        }
+    }
 }

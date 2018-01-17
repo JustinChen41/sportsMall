@@ -10,7 +10,7 @@ public class PathUtil {
         String os = System.getProperty("os.name");//获取程序运行时的系统名称
         String basePath = "";
         if(os.toLowerCase().startsWith("win")){
-            basePath = "F:/projectdev/images";
+            basePath = "F:/myProjects/images";
         }
         else{
             basePath = "/home/";
@@ -26,6 +26,11 @@ public class PathUtil {
 
     public static String getAreaImagePath(String areaId){
         String imagePath = "/upload/item/area/" + areaId + "/";
+        return imagePath.replace("/", seperator);
+    }
+
+    public static String getTeamImagePath(int teamId){
+        String imagePath = "/upload/item/team/" + teamId + "/";
         return imagePath.replace("/", seperator);
     }
 }

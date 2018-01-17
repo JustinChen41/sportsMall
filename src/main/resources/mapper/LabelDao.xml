@@ -9,7 +9,7 @@
         ORDER BY priority ASC
     </select>
     <!--表的主键为自动生成策略时，填写属性及对应的自增主键列和实体类变量名useGeneratedKeys="true" keyColumn="labelId" keyProperty="labelId"-->
-    <insert id="insertLabel" useGeneratedKeys="true" keyProperty="labelId" keyColumn="labelId">
+    <insert id="insertLabel" useGeneratedKeys="true" keyProperty="labelId" keyColumn="label_id">
         INSERT INTO
         tb_label(label_name, priority, create_time, last_edit_time)
         VALUES

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jtchen.dao.PlayDao">
+    <resultMap id="playerMap" type="com.jtchen.entity.Player">
+        <id column="player_id" property="playerId"/>
+        <result column="player_chinese_name" property="playerChineseName"/>
+        <result column="player_english_name" property="playerEnglishName"/>
+        <result column="player_nationality" property="playerNationality"/>
+        <result column="player_birth_place" property="playerBirthPlace"/>
+        <result column="player_birthday" property="playerBirthday"/>
+        <result column="player_position" property="playerPosition"/>
+        <result column="player_height" property="playerHeight"/>
+        <result column="player_weight" property="playerWeight"/>
+        <result column="player_number" property="playerNumber"/>
+        <result column="player_honor" property="playerHonor"/>
+        <result column="player_description" property="playerDescription"/>
+        <result column="player_wiki_url" property="playerWikiUrl"/>
+        <result column="player_portrait" property="playerPortrait"/>
+        <result column="priority" property="priority"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_edit_time" property="lastEditTime"/>
+        <association property="team" column="team_id" javaType="com.jtchen.entity.Team">
+            <id column="team_id" property="teamId"/>
+            <result column="team_chinese_name" property="teamChineseName"/>
+            <result column="team_english_name" property="teamEnglishName"/>
+        </association>
+    </resultMap>
+    <select id="queryPlayerList" resultMap="playerMap">
+        select
+        p.player_id,
+        p.player_chinese_name,
+        p.player_english_name,
+        p.player_nationality,
+        p.player_birth_place,
+        p.player_birthday,
+        p.player_position,
+        p.player_height,
+        p.player_weight,
+        p.player_number,
+        p.player_honor,
+        p.player_description,
+        p.player_wiki_url,
+        p.player_portrait,
+        p.priority,
+        p.create_time,
+        p.last_edit_time,
+        t.team_id,
+        t.team_chinese_name,
+        t.team_english_name
+        FROM tb_player p
+        JOIN tb_team t ON t.team_id = p.team_id
+        ORDER BY p.priority ASC
+    </select>
+    <insert id="insertPlayer" useGeneratedKeys="true" keyProperty="playerId" keyColumn="player_id">
+        INSERT INTO
+        tb_player(player_chinese_name, player_english_name, player_nationality, player_birth_place,
+        player_birthday, player_position, player_height, player_weight, player_number, player_honor,
+        player_description, player_wiki_url, player_portrait, priority, create_time, last_edit_time, team_id)
+        VALUES
+        (#{playerChineseName}, #{playerEnglishName}, #{playerNationality}, #{playerBirthPlace},
+        #{playerBirthday}, #{playerPosition}, #{playerHeight}, #{playerWeight}, #{playerNumber}, #{playerHonor},
+        #{playerDescription}, #{playerWikiUrl}, #{playerPortrait}, #{priority}, #{createTime}, #{lastEditTime}, #{team.teamId})
+    </insert>
+    <update id="updatePlayer" parameterType="com.jtchen.entity.Player">
+        UPDATE tb_player
+        <set>
+            <if test="playerChineseName != null">player_chinese_name=#{playerChineseName},</if>
+            <if test="playerEnglishName != null">player_english_name=#{playerEnglishName},</if>
+            <if test="playerNationality != null">player_nationality=#{playerNationality},</if>
+            <if test="playerBirthPlace != null">player_birth_place=#{playerBirthPlace},</if>
+            <if test="playerBirthday != null">player_birthday=#{playerBirthday},</if>
+            <if test="playerPosition != null">player_position=#{playerPosition},</if>
+            <if test="playerHeight != null">player_height=#{playerHeight},</if>
+            <if test="playerWeight != null">player_weight=#{playerWeight},</if>
+            <if test="playerNumber != null">player_number=#{playerNumber},</if>
+            <if test="playerHonor != null">player_honor=#{playerHonor},</if>
+            <if test="playerDescription != null">player_description=#{playerDescription},</if>
+            <if test="playerWikiUrl != null">player_wiki_url=#{playerWikiUrl},</if>
+            <if test="playerPortrait != null">player_portrait=#{playerPortrait},</if>
+            <if test="priority != null">priority=#{priority},</if>
+            <if test="lastEditTime != null">last_edit_time=#{lastEditTime},</if>
+            <if test="team != null">team_id=#{team.teamId}</if>
+        </set>
+        WHERE player_id = #{playerId}
+    </update>
+    <select id="queryByPlayerId" resultMap="playerMap" parameterType="Integer">
+        select
+        p.player_id,
+        p.player_chinese_name,
+        p.player_english_name,
+        p.player_nationality,
+        p.player_birth_place,
+        p.player_birthday,
+        p.player_position,
+        p.player_height,
+        p.player_weight,
+        p.player_number,
+        p.player_honor,
+        p.player_description,
+        p.player_wiki_url,
+        p.player_portrait,
+        p.priority,
+        p.create_time,
+        p.last_edit_time,
+        t.team_id,
+        t.team_chinese_name,
+        t.team_english_name
+        FROM tb_player p
+        JOIN tb_team t ON t.team_id = p.team_id
+        WHERE p.player_id = #{playerId}
+    </select>
+</mapper>

@@ -34,14 +34,14 @@ public class Player {
     private String playerDescription;
     //球员wiki地址
     private String playerWikiUrl;
+    //球员头像
+    private String playerPortrait;
     // 权重，越大越排前显示
     private Integer priority;
     // 创建时间
     private Date createTime;
     // 更新时间
     private Date lastEditTime;
-    //球员头像
-    private String playerPortrait;
     //所属球队
     private Team team;
 
